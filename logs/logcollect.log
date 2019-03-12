@@ -1317,3 +1317,396 @@
 2018/04/22 21:03:48.304 [D] limit is exited
 2018/04/22 21:03:48.304 [D] limit is exited
 2018/04/22 21:03:54.882 [D] limit is exited
+2019/03/11 18:01:43.039 [D]  init success
+2019/03/11 18:01:43.040 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:01:43.040 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:01:43.046 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/11 18:01:43.047 [D]  init etcd success
+2019/03/11 18:01:45.048 [W]  get key /logagent/192.168.88.152/log_config failed,err:context deadline exceeded
+2019/03/11 18:01:47.048 [W]  get key /logagent/172.17.0.1/log_config failed,err:context deadline exceeded
+2019/03/11 18:01:49.048 [W]  get key /logagent/172.18.0.1/log_config failed,err:context deadline exceeded
+2019/03/11 18:01:51.049 [W]  get key /logagent/172.18.0.1/log_config failed,err:context deadline exceeded
+2019/03/11 18:05:20.910 [D]  init success
+2019/03/11 18:05:20.911 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:05:20.911 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:05:20.913 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/11 18:06:48.908 [D]  init etcd success
+2019/03/11 18:06:50.909 [W]  get key /logagent/192.168.88.152/log_config failed,err:context deadline exceeded
+2019/03/11 18:06:52.909 [W]  get key /logagent/172.17.0.1/log_config failed,err:context deadline exceeded
+2019/03/11 18:06:54.909 [W]  get key /logagent/172.18.0.1/log_config failed,err:context deadline exceeded
+2019/03/11 18:06:56.910 [W]  get key /logagent/172.18.0.1/log_config failed,err:context deadline exceeded
+2019/03/11 18:07:55.767 [D]  init success
+2019/03/11 18:07:55.768 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:07:55.768 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:07:55.770 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/11 18:08:15.631 [D]  init etcd success
+2019/03/11 18:08:35.726 [W]  get key /logagent/192.168.88.152/log_config failed,err:context deadline exceeded
+2019/03/11 18:09:43.964 [D]  init success
+2019/03/11 18:09:43.964 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:09:43.964 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:09:43.967 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/11 18:09:48.007 [D]  init etcd success
+2019/03/11 18:10:14.988 [W]  get key /logagent/192.168.88.152/log_config failed,err:context deadline exceeded
+2019/03/11 18:10:17.559 [W]  get key /logagent/172.17.0.1/log_config failed,err:context deadline exceeded
+2019/03/11 18:10:19.559 [W]  get key /logagent/172.18.0.1/log_config failed,err:context deadline exceeded
+2019/03/11 18:10:21.560 [W]  get key /logagent/172.18.0.1/log_config failed,err:context deadline exceeded
+2019/03/11 18:10:31.791 [D]  init success
+2019/03/11 18:10:31.791 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:10:31.791 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:10:31.793 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/11 18:10:31.794 [D]  init etcd success
+2019/03/11 18:10:41.794 [W]  get key /logagent/192.168.88.152/log_config failed,err:context deadline exceeded
+2019/03/11 18:10:52.897 [D]  init success
+2019/03/11 18:10:52.897 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:10:52.897 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/11 18:10:52.899 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/11 18:10:52.900 [D]  init etcd success
+2019/03/11 18:11:02.900 [W]  get key /logagent/192.168.88.152/log_config failed,err:context deadline exceeded
+2019/03/12 14:18:09.982 [D]  init success
+2019/03/12 14:18:09.982 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:18:09.982 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:18:09.995 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/12 14:18:09.995 [D]  init etcd success
+2019/03/12 14:19:36.016 [D]  PUT "/logagent/192.168.88.152/log_config" : "ceshi"
+
+2019/03/12 14:19:36.016 [D]  log conf :ceshi
+2019/03/12 14:19:36.016 [E]  unmarshal failed,err:invalid character 'c' looking for beginning of value conf:ceshi
+2019/03/12 14:32:11.523 [D]  init success
+2019/03/12 14:32:11.523 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:32:11.523 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:32:11.525 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/12 14:32:11.525 [D]  init etcd success
+2019/03/12 14:32:11.526 [D]  "/logagent/192.168.88.152/log_config" : "ceshi"
+
+2019/03/12 14:32:11.527 [D]  log conf :ceshi
+2019/03/12 14:32:11.527 [E]  unmarshal failed,err:invalid character 'c' looking for beginning of value conf:ceshi
+2019/03/12 14:32:21.530 [D]  PUT "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/dsda.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 14:32:21.530 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/dsda.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 14:32:21.530 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 14:32:21.530 [D]  conf:{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 14:32:21.530 [I]  map [map[/home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc4200e5ef0 0xc420041260 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc42009c4d0})]]
+2019/03/12 14:32:21.530 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 14:37:25.071 [D]  limit is exited
+2019/03/12 14:37:25.071 [D]  limit is exited
+2019/03/12 14:37:25.071 [D]  limit is exited
+2019/03/12 14:37:25.071 [D]  limit is exited
+2019/03/12 14:37:25.071 [D]  limit is exited
+2019/03/12 14:37:25.071 [D]  limit is exited
+2019/03/12 14:40:56.466 [D]  init success
+2019/03/12 14:40:56.466 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:40:56.466 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:40:56.469 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/12 14:40:56.469 [D]  init etcd success
+2019/03/12 14:40:56.471 [D]  "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/dsda.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 14:40:56.472 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/dsda.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 14:40:56.472 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 14:40:56.472 [D]  conf:{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 14:40:56.472 [I]  map [map[/home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc4203820b0 0xc42024e1f0 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc4203b0000})]]
+2019/03/12 14:40:56.472 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 14:44:23.893 [D]  init success
+2019/03/12 14:44:23.893 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:44:23.893 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:44:23.897 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/12 14:44:23.897 [D]  init etcd success
+2019/03/12 14:44:23.899 [D]  "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/dsda.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 14:44:23.900 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/dsda.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 14:44:23.901 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 14:44:23.901 [D]  conf:{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 14:44:23.901 [I]  map [map[/home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc4200e5e40 0xc420041150 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc42009c460})]]
+2019/03/12 14:44:23.901 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 14:46:27.701 [D]  init success
+2019/03/12 14:46:27.701 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:46:27.701 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:46:27.703 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/12 14:46:27.704 [D]  init etcd success
+2019/03/12 14:46:27.705 [D]  "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/dsda.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 14:46:27.706 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/dsda.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 14:46:27.706 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 14:46:27.706 [D]  conf:{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 14:46:27.706 [I]  map [map[/home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc4200e5e40 0xc420041100 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc42009c460})]]
+2019/03/12 14:46:27.706 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 14:52:16.990 [D]  init success
+2019/03/12 14:52:16.990 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:52:16.990 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:52:16.993 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/12 14:52:16.993 [D]  init etcd success
+2019/03/12 14:52:16.995 [D]  "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/dsda.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 14:52:16.995 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/dsda.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 14:52:16.996 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 14:52:16.996 [D]  conf:{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 14:52:38.282 [I]  map [map[/home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc42040c000 0xc42024e1a0 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc420374070})]]
+2019/03/12 14:52:38.282 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 14:59:20.092 [D]  init success
+2019/03/12 14:59:20.093 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:59:20.093 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 14:59:20.096 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/12 14:59:20.096 [D]  init etcd success
+2019/03/12 14:59:20.098 [D]  "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/dsda.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 14:59:20.099 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/dsda.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 14:59:20.100 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 14:59:20.100 [D]  conf:{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 14:59:20.100 [I]  map [map[/home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc4200e5ef0 0xc4200410d0 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc42009c460})]]
+2019/03/12 14:59:20.100 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 15:01:25.536 [D]  init success
+2019/03/12 15:01:25.536 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 15:01:25.536 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 15:01:25.544 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/12 15:01:25.544 [D]  init etcd success
+2019/03/12 15:01:25.546 [D]  "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/dsda.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 15:01:25.547 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/dsda.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 15:01:25.547 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 15:01:25.547 [D]  conf:{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 15:01:25.547 [I]  map [map[/home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc420388000 0xc420041180 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc42009c460})]]
+2019/03/12 15:01:25.547 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 15:02:06.761 [D]  init success
+2019/03/12 15:02:06.762 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 15:02:06.762 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 15:02:06.764 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/12 15:02:06.765 [D]  init etcd success
+2019/03/12 15:02:06.766 [D]  "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/dsda.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 15:02:06.768 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/dsda.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 15:02:06.768 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 15:02:06.768 [D]  conf:{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 15:02:06.768 [I]  map [map[/home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc4203122c0 0xc42024e6b0 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc420338070})]]
+2019/03/12 15:02:06.768 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 15:02:18.279 [D]  limit is exited
+2019/03/12 15:02:47.058 [D]  limit is exited
+2019/03/12 15:02:50.562 [D]  limit is exited
+2019/03/12 15:23:05.071 [D]  PUT "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/aaa.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 15:23:05.071 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/aaa.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 15:23:05.072 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000}]
+2019/03/12 15:23:05.072 [D]  conf:{eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 15:23:05.072 [I]  map [map[/home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc4203122c0 0xc42024e6b0 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc420338070}) /home/qiwenshuai/logs/aaa.log:%!s(*main.TailObj=&{0xc420380370 0xc420378080 0 {eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000} 0xc4203380e0})]]
+2019/03/12 15:23:05.072 [W]  log path:/home/qiwenshuai/logs/dsda.log is remove
+2019/03/12 15:23:05.072 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000}]
+2019/03/12 15:23:28.644 [D]  limit is exited
+2019/03/12 15:23:28.644 [W]  tail obj is exited,config:{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}
+2019/03/12 15:23:43.365 [D]  limit is exited
+2019/03/12 15:24:30.807 [D]  init success
+2019/03/12 15:24:30.808 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 15:24:30.808 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 15:24:30.810 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/12 15:24:30.811 [D]  init etcd success
+2019/03/12 15:24:30.812 [D]  "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/aaa.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 15:24:30.814 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/aaa.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 15:24:30.814 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000}]
+2019/03/12 15:24:30.814 [D]  conf:{eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 15:24:30.814 [I]  map [map[/home/qiwenshuai/logs/aaa.log:%!s(*main.TailObj=&{0xc4203ac0b0 0xc420230140 0 {eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000} 0xc4203f2000})]]
+2019/03/12 15:25:06.679 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000}]
+2019/03/12 15:25:31.684 [D]  PUT "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/dsda.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 15:25:31.684 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/dsda.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 15:25:31.684 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 15:25:31.684 [D]  conf:{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 15:25:31.684 [I]  map [map[/home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc4200e5ef0 0xc420041340 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc42009c460}) /home/qiwenshuai/logs/aaa.log:%!s(*main.TailObj=&{0xc4203ac0b0 0xc420230140 0 {eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000} 0xc4203f2000})]]
+2019/03/12 15:25:58.818 [W]  log path:/home/qiwenshuai/logs/aaa.log is remove
+2019/03/12 15:26:10.999 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 15:48:40.454 [D]  init success
+2019/03/12 15:48:40.454 [I]  [192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 15:48:40.454 [D]  get local ip succ, ips:[192.168.88.152 172.17.0.1 172.18.0.1 172.18.0.1]
+2019/03/12 15:48:40.456 [D]  etcd watch key:[/logagent/192.168.88.152/log_config /logagent/172.17.0.1/log_config /logagent/172.18.0.1/log_config /logagent/172.18.0.1/log_config] timeout:5s
+2019/03/12 15:48:40.456 [D]  init etcd success
+2019/03/12 15:48:40.458 [D]  "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/dsda.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 15:48:40.459 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/dsda.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 15:48:40.459 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 15:48:40.459 [D]  conf:{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 15:48:40.459 [I]  map [map[/home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc4203920b0 0xc42024e1f0 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc4203aa000})]]
+2019/03/12 15:48:40.459 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000}]
+2019/03/12 15:49:05.485 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 15:49:43.521 [D]  limit is exited
+2019/03/12 16:29:04.949 [D]  PUT "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/aaa.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 16:29:04.949 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/aaa.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 16:29:04.949 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000}]
+2019/03/12 16:29:04.949 [D]  conf:{eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000} -- tailobj:<nil>
+2019/03/12 16:29:04.949 [I]  map [map[/home/qiwenshuai/logs/aaa.log:%!s(*main.TailObj=&{0xc420330000 0xc420040cf0 0 {eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000} 0xc42043a150}) /home/qiwenshuai/logs/dsda.log:%!s(*main.TailObj=&{0xc4203920b0 0xc42024e1f0 0 {eslservice_log /home/qiwenshuai/logs/dsda.log eslservice 50000} 0xc4203aa000})]]
+2019/03/12 16:29:04.949 [W]  log path:/home/qiwenshuai/logs/dsda.log is remove
+2019/03/12 16:29:04.949 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000}]
+2019/03/12 16:29:32.495 [D]  limit is exited
+2019/03/12 16:29:32.495 [D]  limit is exited
+2019/03/12 16:29:32.495 [D]  limit is exited
+2019/03/12 16:29:32.495 [D]  limit is exited
+2019/03/12 16:29:32.496 [D]  limit is exited
+2019/03/12 16:29:32.496 [D]  limit is exited
+2019/03/12 16:29:32.496 [D]  limit is exited
+2019/03/12 16:29:32.496 [D]  limit is exited
+2019/03/12 16:29:32.496 [D]  limit is exited
+2019/03/12 16:29:32.496 [D]  limit is exited
+2019/03/12 16:29:32.496 [D]  limit is exited
+2019/03/12 16:29:32.496 [D]  limit is exited
+2019/03/12 16:29:32.496 [D]  limit is exited
+2019/03/12 16:29:32.496 [D]  limit is exited
+2019/03/12 16:29:32.496 [D]  limit is exited
+2019/03/12 16:50:03.230 [D]  PUT "/logagent/192.168.88.152/log_config" : "\n[\n    {\n        \"topic\":\"eslservice_log\",\n        \"log_path\":\"/home/qiwenshuai/logs/aaa.log\",\n        \"service\":\"eslservice\",\n        \"send_rate\":50000\n    }\n]\n"
+
+2019/03/12 16:50:03.230 [D]  log conf :
+[
+    {
+        "topic":"eslservice_log",
+        "log_path":"/home/qiwenshuai/logs/aaa.log",
+        "service":"eslservice",
+        "send_rate":50000
+    }
+]
+
+2019/03/12 16:50:03.230 [D]  unmarshal succ conf:[{eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000}]
+2019/03/12 16:50:03.230 [I]  map[/home/qiwenshuai/logs/aaa.log:0xc4203eb2c0]
+2019/03/12 16:50:03.230 [D]  reaload from etcd success,config:[{eslservice_log /home/qiwenshuai/logs/aaa.log eslservice 50000}]
+2019/03/12 16:50:21.218 [D]  limit is exited
+2019/03/12 16:50:21.218 [D]  limit is exited
+2019/03/12 16:50:21.218 [D]  limit is exited
+2019/03/12 16:50:21.218 [D]  limit is exited
+2019/03/12 16:50:21.219 [D]  limit is exited
+2019/03/12 16:50:21.219 [D]  limit is exited
+2019/03/12 16:50:21.219 [D]  limit is exited
+2019/03/12 16:50:21.219 [D]  limit is exited
+2019/03/12 16:50:21.219 [D]  limit is exited
+2019/03/12 16:50:21.219 [D]  limit is exited
+2019/03/12 16:50:21.219 [D]  limit is exited
+2019/03/12 16:50:21.219 [D]  limit is exited
+2019/03/12 16:50:21.219 [D]  limit is exited
+2019/03/12 16:50:21.219 [D]  limit is exited
+2019/03/12 16:50:21.219 [D]  limit is exited
