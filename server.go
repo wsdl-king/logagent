@@ -11,7 +11,7 @@ import (
 
 type TailMgr struct {
 	//因为我们的agent可能是读取多个日志文件，这里通过存储为一个map
-	tailObjMap map[string]*TailObj
+	tailObjMap map[string][]*TailObj
 	lock       sync.Mutex
 }
 
@@ -31,7 +31,7 @@ var waitGroup sync.WaitGroup
 
 func NewTailMgr() *TailMgr {
 	tailMgr = &TailMgr{
-		tailObjMap: make(map[string]*TailObj, 16),
+		tailObjMap: make(map[string][]*TailObj, 16),
 	}
 	return tailMgr
 }
@@ -42,31 +42,38 @@ func (t *TailMgr) AddLogFile(conf logConfig) (err error) {
 	//二次校验是否存在
 	_, ok := t.tailObjMap[conf.LogPath]
 	if ok {
+		//已经存储了这个全局Map,我这里不做任何的改变
 		err = fmt.Errorf("duplicate filename:%s\n", conf.LogPath)
 		return
 	}
-	tail, err := tail.TailFile(conf.LogPath, tail.Config{
-		ReOpen:    true,
-		Follow:    true,
-		Location:  &tail.SeekInfo{Offset: 0, Whence: 2},
-		MustExist: false,
-		Poll:      true,
-	})
+	split := strings.Split(conf.LogPath, ",")
+	tails := make([]*TailObj, len(split), cap(split))
+	for i, sp := range split {
+		tail, _ := tail.TailFile(sp, tail.Config{
+			ReOpen:    true,
+			Follow:    true,
+			Location:  &tail.SeekInfo{Offset: 0, Whence: 2},
+			MustExist: false,
+			Poll:      true,
+		})
 
-	tailobj := &TailObj{
-		secLimit: NewSecondLimit(int32(conf.SendRate)),
-		logConf:  conf,
-		offset:   0,
-		tail:     tail,
-		exitChan: make(chan bool, 1),
+		tailobj := &TailObj{
+			secLimit: NewSecondLimit(int32(conf.SendRate)),
+			logConf:  conf,
+			offset:   0,
+			tail:     tail,
+			exitChan: make(chan bool, 1),
+		}
+		tails[i] = tailobj
+		go tailobj.readLog()
 	}
-	t.tailObjMap[conf.LogPath] = tailobj
+	t.tailObjMap[conf.LogPath] = tails
 	logs.Info("map [%s]", t.tailObjMap)
-	go tailobj.readLog()
 	return
 }
 
 func (t *TailMgr) reloadConfig(logConfArr []logConfig) (err error) {
+	//这是从chan读的死循环
 	for _, conf := range logConfArr {
 		tailObj, ok := t.tailObjMap[conf.LogPath]
 		//ectd中的这个节点不存在,我要重新去读取这个数据
@@ -77,11 +84,7 @@ func (t *TailMgr) reloadConfig(logConfArr []logConfig) (err error) {
 				logs.Error("add log file failed,err:%v", err)
 				continue
 			}
-			continue
 		}
-		tailObj.logConf = conf
-		t.tailObjMap[conf.LogPath] = tailObj
-		logs.Info(t.tailObjMap)
 	}
 	// 处理删除的日志收集配置
 	for key, tailObj := range t.tailObjMap {
@@ -94,11 +97,12 @@ func (t *TailMgr) reloadConfig(logConfArr []logConfig) (err error) {
 		}
 		if found == false {
 			logs.Warn("log path:%s is remove", key)
-			tailObj.exitChan <- true
+			for _, t := range tailObj {
+				t.exitChan <- true
+			}
 			delete(t.tailObjMap, key)
 		}
 	}
-
 	return
 }
 
