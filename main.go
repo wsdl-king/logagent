@@ -1,14 +1,14 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"github.com/astaxie/beego/logs"
-	"encoding/json"
 	"time"
 )
 
-func getLevel(level string) int{
-	switch level{
+func getLevel(level string) int {
+	switch level {
 	case "debug":
 		return logs.LevelDebug
 	case "trace":
@@ -24,28 +24,27 @@ func getLevel(level string) int{
 	}
 }
 
-func initLog()(err error){
+func initLog() (err error) {
 	//初始化日志库
 	config := make(map[string]interface{})
 	config["filename"] = "./logs/logcollect.log"
 	config["level"] = getLevel(appConfig.LogLevel)
-	configStr,err := json.Marshal(config)
-	if err != nil{
-		fmt.Println("mashal failed,err:",err)
+	configStr, err := json.Marshal(config)
+	if err != nil {
+		fmt.Println("mashal failed,err:", err)
 		return
 	}
-	logs.SetLogger(logs.AdapterFile,string(configStr))
+	logs.SetLogger(logs.AdapterFile, string(configStr))
 	return
 }
 
-
 func main() {
 	err := initConfig("./conf/app.conf")
-	if err != nil{
-		panic(fmt.Sprintf("init config failed,err:%v\n",err))
+	if err != nil {
+		panic(fmt.Sprintf("init config failed,err:%v\n", err))
 	}
 	err = initLog()
-	if err != nil{
+	if err != nil {
 		return
 	}
 	logs.Debug("init success")
@@ -69,4 +68,6 @@ func main() {
 		return
 	}
 	RunServer()
+	//ips, _ := getLocalIP()
+	//fmt.Println(ips)
 }
